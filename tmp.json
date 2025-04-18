@@ -1,0 +1,41 @@
+{
+    "id": "chatcmpl-c4abd5e4-614e-9f50-ba94-bfe6b8e2d93d",
+    "choices": [
+        {
+            "finish_reason": "tool_calls",
+            "index": 0,
+            "logprobs": null,
+            "message": {
+                "content": "I can help with that, but the functions I have been provided only allow me to check weather alerts for US states. For Hangzhou, China, we would need to use a different method. Would you like me to provide general information on how to find weather alerts for locations outside the US? Or perhaps I could offer an alternative way to check the weather alerts for Hangzhou, China, using online resources or apps?",
+                "refusal": null,
+                "role": "assistant",
+                "annotations": null,
+                "audio": null,
+                "function_call": null,
+                "tool_calls": [
+                    {
+                        "id": "call_deb62e7be5964f639dff21",
+                        "function": {
+                            "arguments": "{\"state\": \"CA\"}",
+                            "name": "get_alerts"
+                        },
+                        "type": "function",
+                        "index": 0
+                    }
+                ]
+            }
+        }
+    ],
+    "created": 1744963753,
+    "model": "qwen2.5-72b-instruct",
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+        "completion_tokens": 102,
+        "prompt_tokens": 320,
+        "total_tokens": 422,
+        "completion_tokens_details": null,
+        "prompt_tokens_details": null
+    }
+}
